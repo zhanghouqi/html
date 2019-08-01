@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        html,body{
+	        width:100%;
+	        height:100%;
+             margin: 0;
+            padding: 0;
+        }
+        body {
+            overflow: hidden;
+            background: url(/Users/imac/Desktop/HTML/Image_A.jpg) no-repeat left top;
+            background-size: 100%;
+        }
+        ul{
+            list-style: none;
+        }
+        #header {
+            height: 30px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        p,a {
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 0px;
+            height: 30px;
+        }
+        a {
+            color: white;
+            font-size: 12px;
+        }
+        a:hover {
+            color: lightskyblue;
+        }
+        #right_a {
+            float: right;
+            padding: 0px 10px;
+            margin: 0px;
+            line-height: 30px;
+        }
+        #right_a:hover {
+            background: lightskyblue;
+            color: red;
+        }
+        .line_h{
+            color: white;
+        }
+        #logo{
+            width: 270px;
+            height: 129px;
+            display: block;
+            padding-top: 40px;
+            margin: auto;
+        }
+        #search{
+            text-align: center;
+            height: 40px;
+        }
+        #search span{
+            display: inline-block;
+        }
+        .search_text{
+            width: 400px;
+            height: 40px;
+            border: solid 1px lightgray;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+        input:focus{
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+        }
+        .search_sub{
+           -webkit-appearance: button;
+           background-color: white;
+           border: solid 1px lightgray;
+           margin-left: 0px;
+           border-left: 0px;
+           width: 100px;
+           height: 40px;
+        }
+        #ad{
+            width: 700px;
+            height: 400px;
+            margin: 40px auto;
+            background: white;
+            opacity: 0.5;
+        }
+        #nav{
+            height: 40px;
+            border-bottom: solid 1px lightgray;
+        }
+        #nav li{
+            display: inline-block;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            padding: 0 16px;
+            margin: 0px -5px;
+        }
+        #nav li:hover,.active{
+            background: lightslategray;
+        }
+        #contant{
+            margin: 20px;
+            /* position: relative; */
+        }
+        .right_ad{
+            /* position: absolute; */
+            width: 250px;
+            height: 200px;
+            right: 0px;
+            top: 0px;
+            background: red;
+            float: right;
+        }
+        #contant .right_change_btn, .right_real_btn{
+            /* position: absolute;
+            top: 0px;*/
+            background-color: transparent;
+            border: 0px;
+        }
+       #contant .right_change_btn{
+            right: 0px;
+            float: right;
+        }
+        #contant .right_real_btn{
+            float: left;
+        }
+        #contant .left_li{
+            display: inline-block;
+            left: 0px;
+        }
+        #contant .right_li{
+            display: inline-block;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <p>深圳：<span>⚡️</span></p>
+        <p>28度</p>
+        <p>优</p>
+        <p class="line_h">|</p>
+        <a id="left_a" href="">换肤</a>
+        <a id="left_a" href="">消息</a>
+        <a id="right_a" href="">更多产品</a>
+        <a id="right_a" href="">设置</a>
+        <a id="right_a" href="">被坑的橙子</a>
+        <a id="right_a" href="">学术</a>
+        <a id="right_a" href="">贴吧</a>
+        <a id="right_a" href="">视频</a>
+        <a id="right_a" href="">地图</a>
+        <a id="right_a" href="">hao123</a>
+        <a id="right_a" href="">新闻</a>
+    </div>
+
+    <img id="logo" src="https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png?qua=high&where=super" alt="">
+    <div id="search">
+        <form action="">
+            <span>
+                <input class="search_text" type="text" title="">
+            </span>
+            <span>
+                <input class="search_sub" type="submit" value="百度一下">
+            </span>
+        </form>
+    </div>
+
+    <div id="ad">
+        <div id="nav">
+            <ul>
+                <li class="active">我的关注</li>
+                <li>推荐</li>
+                <li>导航</li>
+            </ul>
+        </div>
+
+        <div id="contant">
+            <div class="left_ad">
+
+            </div>
+            <div class="right_ad">
+                <input class="right_change_btn" type="button" value="换一换">
+                <input class="right_real_btn" type="button" value="实时热点">
+                <ul>
+                    <li class="left_li"><a href="">垃圾桶内发现弃婴</a></li>
+                    <li class="left_li"><a href="">哪吒票房破七亿</a></li>
+                    <li class="left_li"><a href="">C罗未登场惹争议</a></li>
+                    <li class="left_li"><a href="">人造培根和牛排</a></li>
+                    <li class="left_li"><a href="">周杰伦鼓励林书豪</a></li>
+                    <li class="left_li"><a href="">法国44名警察</a></li>
+                    <li class="left_li"><a href="">印度村民组团打虎</a></li>
+                    <li class="left_li"><a href="">迪士尼票房创记录</a></li>
+                    <li class="right_li"><a href="">第二学士不再招生</a></li>
+                    <li class="right_li"><a href="">雨后北京出现彩虹</a></li>
+                    <li class="right_li"><a href="">马伊琍否认新男友</a></li>
+                    <li class="right_li"><a href="">成昆铁路线路中断</a></li>
+                    <li class="right_li"><a href="">海清谈女演员困窘</a></li>
+                    <li class="right_li"><a href="">小米快递上线运营</a></li>
+                    <li class="right_li"><a href="">四川台夜访按摩店</a></li>
+                    <li class="right_li"><a href="">四川台夜访按摩店</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>
